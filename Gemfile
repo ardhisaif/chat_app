@@ -3,6 +3,16 @@ source "https://rubygems.org"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem 'devise', '~> 4.9', '>= 4.9.3'
+
+gem 'simple_form', '~> 5.0'
+
+gem 'bootstrap', '~> 5.3.3'
+
+gem 'jquery-rails'
+
+gem 'cssbundling-rails', '~> 1.3', '>= 1.3.3'
+
 gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", ">= 1.4"
@@ -47,7 +57,9 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  # gem "web-console"
+  gem 'web-console', '~> 3.0'
+
 end
 
 group :test do
