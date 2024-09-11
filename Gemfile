@@ -21,6 +21,16 @@ gem "jbuilder"
 
 gem 'devise', '~> 4.9', '>= 4.9.3'
 
+gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+
+gem 'jquery-rails', '~> 4.4'
+
+gem 'cssbundling-rails', '~> 1.3', '>= 1.3.3'
+
+gem 'simple_form', '~> 5.1'
+
+gem 'sassc-rails'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
