@@ -29,6 +29,8 @@ gem 'simple_form', '~> 5.1'
 
 gem 'sassc-rails'
 
+gem 'redis', '~> 5.3'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
