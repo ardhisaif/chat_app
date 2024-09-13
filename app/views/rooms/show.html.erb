@@ -32,27 +32,6 @@
           </div>
         </div>
       <% end %>
-
-      <div class="d-none" data-role="message-template">
-        <div class="chat-message-container">
-          <div class="row no-gutters">
-            <div class="col-auto text-center">
-              <img src="" class="avatar" alt="" data-role="user-avatar">
-            </div>
-
-            <div class="col">
-              <div class="message-content">
-                <p class="mb-1" data-role="message-text"></p>
-
-                <div class="text-right">
-                  <small data-role="message-date"></small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <%= simple_form_for @room_message, remote: true do |form| %>
@@ -61,7 +40,8 @@
                                  wrapper: false,
                                  label: false,
                                  input_html: {
-                                   class: 'chat-input'
+                                   class: 'chat-input',
+                                   autocomplete: 'off'
                                  } %>
         <div class="input-group-append">
           <%= form.submit "Send", class: 'btn btn-primary chat-input' %>
@@ -70,5 +50,28 @@
 
       <%= form.input :room_id, as: :hidden %>
     <% end %>
+  </div>
+</div>
+
+<div class="d-none" data-role="message-template">
+  <div class="chat-message-container">
+    <div class="row no-gutters">
+      <div class="col-auto text-center">
+        <img src="" class="avatar" alt="" data-role="user-avatar">
+      </div>
+
+      <div class="col">
+        <div class="message-content">
+          <p class="mb-1" data-role="message-text">
+
+          </p>
+
+          <div class="text-right">
+            <small data-role="message-date">
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
